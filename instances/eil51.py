@@ -1,5 +1,3 @@
-import math
-
 points = [
 (37, 52),
 (49, 49),
@@ -54,15 +52,4 @@ points = [
 (30, 40),
 ]
 
-def get_distance_matrix():
-    n = len(points)
-    matriz = [[0.0]*n for _ in range(n)]
-    
-    for i in range(n):
-        xi, yi = points[i]
-        for j in range(n):
-            xj, yj = points[j]
-            distancia = math.hypot(xi - xj, yi - yj)
-            matriz[i][j] = distancia
-            
-    return matriz
+optimal = 426

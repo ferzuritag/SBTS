@@ -1,9 +1,6 @@
-from instances.eil import get_distance_matrix
 import random
 
-distance_matrix = get_distance_matrix()
-
-def fitness(route):
+def fitness(distance_matrix, route):
     cost = 0
 
     for index in range(0, len(route) - 1):
@@ -63,26 +60,28 @@ def do_moves(individual, moves):
 
     return individual
 
-def do_moves_over_the_same(individual, moves, fitness):
+def do_moves_over_the_same(distance_matrix, individual, moves, fitness):
     tabu_list = []
     moves_counter = 0
-    original = individual.copy()
-    best_individual = original.copy()
-    best_fitness = fitness(original)
+    current = individual.copy()
+    best_individual = current.copy()
+    best_fitness = fitness(distance_matrix, current)
 
     while moves_counter < moves:
-        i, j = random.sample(range(len(original)), 2)
+        i, j = random.sample(range(len(current)), 2)
         move = (min(i, j), max(i, j))
 
         if move not in tabu_list:
-            temp = original.copy()
-            temp[i], temp[j] = temp[j], temp[i]
+            # Realizar el movimiento sobre el actual
+            current[i], current[j] = current[j], current[i]
+            current_fitness = fitness(distance_matrix, current)
 
-            temp_fitness = fitness(temp)
-
-            if temp_fitness < best_fitness:
-                best_individual = temp
-                best_fitness = temp_fitness
+            if current_fitness < best_fitness:
+                best_individual = current.copy()
+                best_fitness = current_fitness
+            else:
+                # Si no mejora, deshacer el movimiento
+                current[i], current[j] = current[j], current[i]
 
             tabu_list.append(move)
             moves_counter += 1
@@ -90,29 +89,33 @@ def do_moves_over_the_same(individual, moves, fitness):
     return best_individual, best_fitness
 
 #426
-def SBTS(population_size, generations, exploration_factor, explotation_moves, exploration_moves):
+def SBTS(distance_matrix, population_size, generations, exploration_factor, explotation_moves, exploration_moves):
     population = generate_random_solutions(population_size, len(distance_matrix) - 1)
 
     alpha_fitness = float('inf')
     alpha_individual = None
 
-    worst_found = 0
+    gen_history = []
 
-
+    # evaluation
     for individual in population:
-        individual_fitness = fitness(individual)
+        individual_fitness = fitness(distance_matrix, individual)
+        
+        if (individual_fitness < alpha_fitness):
+            alpha_fitness = individual_fitness
+            alpha_individual = individual
+
 
 
     for gen in range(generations):
-        n = len(population[0])
 
         for idx, individual in enumerate(population):
             
-            fitness_before_changes = fitness(individual)
+            fitness_before_changes = fitness(distance_matrix, individual)
 
             if (random.random() > exploration_factor):
                 # explotation behavior
-                best_individual_found, best_fitness_found = do_moves_over_the_same(individual, moves=explotation_moves, fitness=fitness)
+                best_individual_found, best_fitness_found = do_moves_over_the_same(distance_matrix, individual, moves=explotation_moves, fitness=fitness)
 
                 if best_fitness_found < fitness_before_changes:
                     population[idx] = best_individual_found
@@ -124,15 +127,19 @@ def SBTS(population_size, generations, exploration_factor, explotation_moves, ex
                     alpha_individual = best_individual_found
             else:
                 new_individual = do_moves(individual, moves=exploration_moves)
-                new_individual_fitness = fitness(new_individual)
+                new_individual_fitness = fitness(distance_matrix, new_individual)
 
                 if (new_individual_fitness < alpha_fitness):
                     alpha_fitness = new_individual_fitness
                     alpha_individual = new_individual
 
+                if new_individual_fitness < fitness_before_changes:
+                    population[idx] = new_individual
 
-    
+                
+                    
+        gen_history.append(alpha_fitness)
 
-    return alpha_fitness, alpha_individual
+    return alpha_fitness, alpha_individual, gen_history
 
 
