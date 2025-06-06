@@ -12,6 +12,32 @@ def fitness(distance_matrix, route):
 
     return cost
 
+def generate_greedy_solution(dist_matrix):
+    n = len(dist_matrix)
+    visited = [False] * n
+    sequence = []
+    
+    current = 0  # start from point 0 (you can change this)
+    sequence.append(current)
+    visited[current] = True
+    
+    for _ in range(n - 1):
+        min_dist = float('inf')
+        next_point = None
+        
+        for i in range(n):
+            if not visited[i] and dist_matrix[current][i] < min_dist:
+                min_dist = dist_matrix[current][i]
+                next_point = i
+        
+        visited[next_point] = True
+        sequence.append(next_point)
+        current = next_point
+    
+
+
+    return sequence
+
 def generate_random_solutions(n, m):
 
     solutions = []
@@ -24,25 +50,17 @@ def generate_random_solutions(n, m):
 
     return solutions
 
-def apply_random_swaps_to_all(arrays, x):
+def generate_random_greedy_solutions(distance_matrix, n, shuffle_moves):
+    original_greedy = generate_greedy_solution(distance_matrix)
+    solutions = [original_greedy]
 
-    n = len(arrays[0])
-    moves = [tuple(random.sample(range(n), 2)) for _ in range(x)]
+    for _ in range(n):
+        samp = shuffle(original_greedy, shuffle_moves)
+        solutions.append(samp)
 
-    for idx in range(len(arrays)):
-        for i, j in moves:
-            arrays[idx][i], arrays[idx][j] = arrays[idx][j], arrays[idx][i]
+    return solutions
 
-def generate_neighbors(solution):
-    neighbors = []
-    for i in range(len(solution)):
-        for j in range(i + 1, len(solution)):
-            neighbor = solution.copy()
-            neighbor[i], neighbor[j] = neighbor[j], neighbor[i]
-            neighbors.append((neighbor, (i, j))) 
-    return neighbors
-
-def do_moves(individual, moves):
+def shuffle(individual, moves):
     tabu_list = []
     moves_counter = 0
     individual = individual.copy()
@@ -60,7 +78,7 @@ def do_moves(individual, moves):
 
     return individual
 
-def do_moves_over_the_same(distance_matrix, individual, moves, fitness):
+def search_on_neighboor(distance_matrix, individual, moves, fitness):
     tabu_list = []
     moves_counter = 0
     current = individual.copy()
@@ -72,7 +90,6 @@ def do_moves_over_the_same(distance_matrix, individual, moves, fitness):
         move = (min(i, j), max(i, j))
 
         if move not in tabu_list:
-            # Realizar el movimiento sobre el actual
             current[i], current[j] = current[j], current[i]
             current_fitness = fitness(distance_matrix, current)
 
@@ -88,12 +105,11 @@ def do_moves_over_the_same(distance_matrix, individual, moves, fitness):
 
     return best_individual, best_fitness
 
-#426
 def SBTS(distance_matrix, population_size, generations, exploration_factor, explotation_moves, exploration_moves):
     population = generate_random_solutions(population_size, len(distance_matrix) - 1)
 
-    alpha_fitness = float('inf')
-    alpha_individual = None
+    best_fitnesss = float('inf')
+    best_individual_found = None
 
     gen_history = []
 
@@ -101,10 +117,9 @@ def SBTS(distance_matrix, population_size, generations, exploration_factor, expl
     for individual in population:
         individual_fitness = fitness(distance_matrix, individual)
         
-        if (individual_fitness < alpha_fitness):
-            alpha_fitness = individual_fitness
-            alpha_individual = individual
-
+        if (individual_fitness < best_fitnesss):
+            best_fitnesss = individual_fitness
+            best_individual_found = individual
 
 
     for gen in range(generations):
@@ -115,31 +130,29 @@ def SBTS(distance_matrix, population_size, generations, exploration_factor, expl
 
             if (random.random() > exploration_factor):
                 # explotation behavior
-                best_individual_found, best_fitness_found = do_moves_over_the_same(distance_matrix, individual, moves=explotation_moves, fitness=fitness)
+                best_individual_found, best_fitness_found = search_on_neighboor(distance_matrix, individual, moves=explotation_moves, fitness=fitness)
 
                 if best_fitness_found < fitness_before_changes:
                     population[idx] = best_individual_found
                 elif (random.random() < exploration_factor):
                     population[idx] = best_individual_found
 
-                if (best_fitness_found < alpha_fitness):
-                    alpha_fitness = best_fitness_found
-                    alpha_individual = best_individual_found
+                if (best_fitness_found < best_fitnesss):
+                    best_fitnesss = best_fitness_found
+                    best_individual_found = best_individual_found
             else:
-                new_individual = do_moves(individual, moves=exploration_moves)
+                new_individual = shuffle(individual, moves=exploration_moves)
                 new_individual_fitness = fitness(distance_matrix, new_individual)
 
-                if (new_individual_fitness < alpha_fitness):
-                    alpha_fitness = new_individual_fitness
-                    alpha_individual = new_individual
+                if (new_individual_fitness < best_fitnesss):
+                    best_fitnesss = new_individual_fitness
+                    best_individual_found = new_individual
 
                 if new_individual_fitness < fitness_before_changes:
                     population[idx] = new_individual
-
                 
-                    
-        gen_history.append(alpha_fitness)
+        gen_history.append(best_fitnesss)
 
-    return alpha_fitness, alpha_individual, gen_history
+    return best_fitnesss, best_individual_found, gen_history
 
 

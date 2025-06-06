@@ -1,0 +1,1028 @@
+exploration_moves= 25
+fitness_avg= 510.0
+time_avg= 2.4872778415679933
+=========================================
+exp_factor= 0.1
+population= 20
+generation= 1000
+explotation_moves= 12
+exploration_moves= 17
+fitness_avg= 529.0
+time_avg= 1.7326565742492677
+=========================================
+exp_factor= 0.1
+population= 20
+generation= 1000
+explotation_moves= 12
+exploration_moves= 12
+fitness_avg= 519.0
+time_avg= 1.2597426414489745
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 100
+explotation_moves= 25
+exploration_moves= 25
+fitness_avg= 581.6
+time_avg= 0.38489594459533694
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 100
+explotation_moves= 25
+exploration_moves= 17
+fitness_avg= 607.8
+time_avg= 0.27194747924804685
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 100
+explotation_moves= 25
+exploration_moves= 12
+fitness_avg= 669.6
+time_avg= 0.19592514038085937
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 100
+explotation_moves= 17
+exploration_moves= 25
+fitness_avg= 568.2
+time_avg= 0.3760085105895996
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 100
+explotation_moves= 17
+exploration_moves= 17
+fitness_avg= 620.6
+time_avg= 0.2586969375610352
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 100
+explotation_moves= 17
+exploration_moves= 12
+fitness_avg= 653.4
+time_avg= 0.1916820526123047
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 100
+explotation_moves= 12
+exploration_moves= 25
+fitness_avg= 589.0
+time_avg= 0.37380170822143555
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 100
+explotation_moves= 12
+exploration_moves= 17
+fitness_avg= 616.6
+time_avg= 0.26249284744262696
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 100
+explotation_moves= 12
+exploration_moves= 12
+fitness_avg= 639.0
+time_avg= 0.19011998176574707
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 1000
+explotation_moves= 25
+exploration_moves= 25
+fitness_avg= 517.2
+time_avg= 3.804743194580078
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 1000
+explotation_moves= 25
+exploration_moves= 17
+fitness_avg= 511.2
+time_avg= 2.6976827144622804
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 1000
+explotation_moves= 25
+exploration_moves= 12
+fitness_avg= 526.4
+time_avg= 1.9996805667877198
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 1000
+explotation_moves= 17
+exploration_moves= 25
+fitness_avg= 518.0
+time_avg= 3.7999868392944336
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 1000
+explotation_moves= 17
+exploration_moves= 17
+fitness_avg= 517.0
+time_avg= 2.640335750579834
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 1000
+explotation_moves= 17
+exploration_moves= 12
+fitness_avg= 510.2
+time_avg= 1.9297054290771485
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 1000
+explotation_moves= 12
+exploration_moves= 25
+fitness_avg= 508.6
+time_avg= 3.755116319656372
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 1000
+explotation_moves= 12
+exploration_moves= 17
+fitness_avg= 510.4
+time_avg= 2.6545345783233643
+=========================================
+exp_factor= 0.1
+population= 30
+generation= 1000
+explotation_moves= 12
+exploration_moves= 12
+fitness_avg= 530.6
+time_avg= 1.9169949054718018
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 100
+explotation_moves= 25
+exploration_moves= 25
+fitness_avg= 620.8
+time_avg= 0.11588845252990723
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 100
+explotation_moves= 25
+exploration_moves= 17
+fitness_avg= 638.2
+time_avg= 0.08396897315979004
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 100
+explotation_moves= 25
+exploration_moves= 12
+fitness_avg= 686.8
+time_avg= 0.06581802368164062
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 100
+explotation_moves= 17
+exploration_moves= 25
+fitness_avg= 610.4
+time_avg= 0.11297268867492676
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 100
+explotation_moves= 17
+exploration_moves= 17
+fitness_avg= 627.6
+time_avg= 0.08047223091125488
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 100
+explotation_moves= 17
+exploration_moves= 12
+fitness_avg= 691.6
+time_avg= 0.06301631927490234
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 100
+explotation_moves= 12
+exploration_moves= 25
+fitness_avg= 606.8
+time_avg= 0.11507277488708496
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 100
+explotation_moves= 12
+exploration_moves= 17
+fitness_avg= 640.6
+time_avg= 0.07878146171569825
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 100
+explotation_moves= 12
+exploration_moves= 12
+fitness_avg= 699.2
+time_avg= 0.0584197998046875
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 1000
+explotation_moves= 25
+exploration_moves= 25
+fitness_avg= 525.0
+time_avg= 1.1845809936523437
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 1000
+explotation_moves= 25
+exploration_moves= 17
+fitness_avg= 536.6
+time_avg= 0.8551502704620362
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 1000
+explotation_moves= 25
+exploration_moves= 12
+fitness_avg= 541.2
+time_avg= 0.6586469173431396
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 1000
+explotation_moves= 17
+exploration_moves= 25
+fitness_avg= 532.2
+time_avg= 1.147329616546631
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 1000
+explotation_moves= 17
+exploration_moves= 17
+fitness_avg= 531.6
+time_avg= 0.8292943000793457
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 1000
+explotation_moves= 17
+exploration_moves= 12
+fitness_avg= 533.2
+time_avg= 0.6176291465759277
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 1000
+explotation_moves= 12
+exploration_moves= 25
+fitness_avg= 527.6
+time_avg= 1.1567608833312988
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 1000
+explotation_moves= 12
+exploration_moves= 17
+fitness_avg= 530.6
+time_avg= 0.7933529853820801
+=========================================
+exp_factor= 0.2
+population= 10
+generation= 1000
+explotation_moves= 12
+exploration_moves= 12
+fitness_avg= 544.4
+time_avg= 0.6006204605102539
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 100
+explotation_moves= 25
+exploration_moves= 25
+fitness_avg= 612.0
+time_avg= 0.23757023811340333
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 100
+explotation_moves= 25
+exploration_moves= 17
+fitness_avg= 635.6
+time_avg= 0.169685697555542
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 100
+explotation_moves= 25
+exploration_moves= 12
+fitness_avg= 671.8
+time_avg= 0.12736067771911622
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 100
+explotation_moves= 17
+exploration_moves= 25
+fitness_avg= 603.4
+time_avg= 0.22630529403686522
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 100
+explotation_moves= 17
+exploration_moves= 17
+fitness_avg= 634.8
+time_avg= 0.16050949096679687
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 100
+explotation_moves= 17
+exploration_moves= 12
+fitness_avg= 687.2
+time_avg= 0.12470126152038574
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 100
+explotation_moves= 12
+exploration_moves= 25
+fitness_avg= 584.0
+time_avg= 0.22246866226196288
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 100
+explotation_moves= 12
+exploration_moves= 17
+fitness_avg= 624.8
+time_avg= 0.16259865760803222
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 100
+explotation_moves= 12
+exploration_moves= 12
+fitness_avg= 684.6
+time_avg= 0.12238121032714844
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 1000
+explotation_moves= 25
+exploration_moves= 25
+fitness_avg= 521.0
+time_avg= 2.3752880573272703
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 1000
+explotation_moves= 25
+exploration_moves= 17
+fitness_avg= 520.2
+time_avg= 1.7221080780029296
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 1000
+explotation_moves= 25
+exploration_moves= 12
+fitness_avg= 516.4
+time_avg= 1.2947659015655517
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 1000
+explotation_moves= 17
+exploration_moves= 25
+fitness_avg= 529.6
+time_avg= 2.3337880611419677
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 1000
+explotation_moves= 17
+exploration_moves= 17
+fitness_avg= 520.2
+time_avg= 1.6250128746032715
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 1000
+explotation_moves= 17
+exploration_moves= 12
+fitness_avg= 533.8
+time_avg= 1.2250656604766845
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 1000
+explotation_moves= 12
+exploration_moves= 25
+fitness_avg= 527.8
+time_avg= 2.2751503467559813
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 1000
+explotation_moves= 12
+exploration_moves= 17
+fitness_avg= 522.2
+time_avg= 1.6113120079040528
+=========================================
+exp_factor= 0.2
+population= 20
+generation= 1000
+explotation_moves= 12
+exploration_moves= 12
+fitness_avg= 522.4
+time_avg= 1.2009830951690674
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 100
+explotation_moves= 25
+exploration_moves= 25
+fitness_avg= 607.4
+time_avg= 0.35237560272216795
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 100
+explotation_moves= 25
+exploration_moves= 17
+fitness_avg= 623.2
+time_avg= 0.25267930030822755
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 100
+explotation_moves= 25
+exploration_moves= 12
+fitness_avg= 658.2
+time_avg= 0.19632773399353026
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 100
+explotation_moves= 17
+exploration_moves= 25
+fitness_avg= 595.2
+time_avg= 0.34940524101257325
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 100
+explotation_moves= 17
+exploration_moves= 17
+fitness_avg= 637.4
+time_avg= 0.250579309463501
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 100
+explotation_moves= 17
+exploration_moves= 12
+fitness_avg= 648.4
+time_avg= 0.18833498954772948
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 100
+explotation_moves= 12
+exploration_moves= 25
+fitness_avg= 600.4
+time_avg= 0.3463939666748047
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 100
+explotation_moves= 12
+exploration_moves= 17
+fitness_avg= 625.6
+time_avg= 0.2453242778778076
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 100
+explotation_moves= 12
+exploration_moves= 12
+fitness_avg= 678.0
+time_avg= 0.18219056129455566
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 1000
+explotation_moves= 25
+exploration_moves= 25
+fitness_avg= 503.2
+time_avg= 3.588205671310425
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 1000
+explotation_moves= 25
+exploration_moves= 17
+fitness_avg= 519.0
+time_avg= 2.5841114044189455
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 1000
+explotation_moves= 25
+exploration_moves= 12
+fitness_avg= 504.2
+time_avg= 1.9589764595031738
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 1000
+explotation_moves= 17
+exploration_moves= 25
+fitness_avg= 512.2
+time_avg= 3.523033285140991
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 1000
+explotation_moves= 17
+exploration_moves= 17
+fitness_avg= 515.2
+time_avg= 2.482958984375
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 1000
+explotation_moves= 17
+exploration_moves= 12
+fitness_avg= 525.4
+time_avg= 1.8558159351348877
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 1000
+explotation_moves= 12
+exploration_moves= 25
+fitness_avg= 514.0
+time_avg= 3.427023506164551
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 1000
+explotation_moves= 12
+exploration_moves= 17
+fitness_avg= 514.6
+time_avg= 2.405122900009155
+=========================================
+exp_factor= 0.2
+population= 30
+generation= 1000
+explotation_moves= 12
+exploration_moves= 12
+fitness_avg= 514.2
+time_avg= 1.8163702011108398
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 100
+explotation_moves= 25
+exploration_moves= 25
+fitness_avg= 614.0
+time_avg= 0.11032605171203613
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 100
+explotation_moves= 25
+exploration_moves= 17
+fitness_avg= 652.8
+time_avg= 0.08312625885009765
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 100
+explotation_moves= 25
+exploration_moves= 12
+fitness_avg= 675.8
+time_avg= 0.06422963142395019
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 100
+explotation_moves= 17
+exploration_moves= 25
+fitness_avg= 628.6
+time_avg= 0.10420393943786621
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 100
+explotation_moves= 17
+exploration_moves= 17
+fitness_avg= 665.4
+time_avg= 0.07463550567626953
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 100
+explotation_moves= 17
+exploration_moves= 12
+fitness_avg= 715.0
+time_avg= 0.058080625534057614
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 100
+explotation_moves= 12
+exploration_moves= 25
+fitness_avg= 636.6
+time_avg= 0.10179352760314941
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 100
+explotation_moves= 12
+exploration_moves= 17
+fitness_avg= 664.0
+time_avg= 0.0746960163116455
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 100
+explotation_moves= 12
+exploration_moves= 12
+fitness_avg= 727.8
+time_avg= 0.05622453689575195
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 1000
+explotation_moves= 25
+exploration_moves= 25
+fitness_avg= 540.2
+time_avg= 1.097377395629883
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 1000
+explotation_moves= 25
+exploration_moves= 17
+fitness_avg= 531.6
+time_avg= 0.8164422988891602
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 1000
+explotation_moves= 25
+exploration_moves= 12
+fitness_avg= 540.4
+time_avg= 0.642945384979248
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 1000
+explotation_moves= 17
+exploration_moves= 25
+fitness_avg= 515.6
+time_avg= 1.0497469425201416
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 1000
+explotation_moves= 17
+exploration_moves= 17
+fitness_avg= 529.0
+time_avg= 0.7728911399841308
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 1000
+explotation_moves= 17
+exploration_moves= 12
+fitness_avg= 531.6
+time_avg= 0.5812082290649414
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 1000
+explotation_moves= 12
+exploration_moves= 25
+fitness_avg= 526.6
+time_avg= 1.0242783546447753
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 1000
+explotation_moves= 12
+exploration_moves= 17
+fitness_avg= 526.6
+time_avg= 0.7440985202789306
+=========================================
+exp_factor= 0.3
+population= 10
+generation= 1000
+explotation_moves= 12
+exploration_moves= 12
+fitness_avg= 533.6
+time_avg= 0.5563137054443359
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 100
+explotation_moves= 25
+exploration_moves= 25
+fitness_avg= 605.2
+time_avg= 0.22542643547058105
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 100
+explotation_moves= 25
+exploration_moves= 17
+fitness_avg= 644.8
+time_avg= 0.16267056465148927
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 100
+explotation_moves= 25
+exploration_moves= 12
+fitness_avg= 690.2
+time_avg= 0.12517356872558594
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 100
+explotation_moves= 17
+exploration_moves= 25
+fitness_avg= 623.8
+time_avg= 0.215651798248291
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 100
+explotation_moves= 17
+exploration_moves= 17
+fitness_avg= 654.6
+time_avg= 0.1502934455871582
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 100
+explotation_moves= 17
+exploration_moves= 12
+fitness_avg= 693.6
+time_avg= 0.11691880226135254
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 100
+explotation_moves= 12
+exploration_moves= 25
+fitness_avg= 604.6
+time_avg= 0.20537314414978028
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 100
+explotation_moves= 12
+exploration_moves= 17
+fitness_avg= 654.6
+time_avg= 0.1490870952606201
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 100
+explotation_moves= 12
+exploration_moves= 12
+fitness_avg= 696.6
+time_avg= 0.11346945762634278
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 1000
+explotation_moves= 25
+exploration_moves= 25
+fitness_avg= 512.8
+time_avg= 2.2343312740325927
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 1000
+explotation_moves= 25
+exploration_moves= 17
+fitness_avg= 537.4
+time_avg= 1.6580872058868408
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 1000
+explotation_moves= 25
+exploration_moves= 12
+fitness_avg= 525.2
+time_avg= 1.2856808185577393
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 1000
+explotation_moves= 17
+exploration_moves= 25
+fitness_avg= 525.4
+time_avg= 2.1208277702331544
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 1000
+explotation_moves= 17
+exploration_moves= 17
+fitness_avg= 511.4
+time_avg= 1.5414344787597656
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 1000
+explotation_moves= 17
+exploration_moves= 12
+fitness_avg= 522.8
+time_avg= 1.1806671142578125
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 1000
+explotation_moves= 12
+exploration_moves= 25
+fitness_avg= 521.2
+time_avg= 2.066116189956665
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 1000
+explotation_moves= 12
+exploration_moves= 17
+fitness_avg= 529.0
+time_avg= 1.4769798278808595
+=========================================
+exp_factor= 0.3
+population= 20
+generation= 1000
+explotation_moves= 12
+exploration_moves= 12
+fitness_avg= 522.2
+time_avg= 1.1321754455566406
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 100
+explotation_moves= 25
+exploration_moves= 25
+fitness_avg= 597.4
+time_avg= 0.32972469329833987
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 100
+explotation_moves= 25
+exploration_moves= 17
+fitness_avg= 653.4
+time_avg= 0.2493208408355713
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 100
+explotation_moves= 25
+exploration_moves= 12
+fitness_avg= 693.6
+time_avg= 0.190156888961792
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 100
+explotation_moves= 17
+exploration_moves= 25
+fitness_avg= 608.2
+time_avg= 0.32308096885681153
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 100
+explotation_moves= 17
+exploration_moves= 17
+fitness_avg= 642.6
+time_avg= 0.23574504852294922
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 100
+explotation_moves= 17
+exploration_moves= 12
+fitness_avg= 688.2
+time_avg= 0.17354240417480468
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 100
+explotation_moves= 12
+exploration_moves= 25
+fitness_avg= 615.4
+time_avg= 0.30938382148742677
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 100
+explotation_moves= 12
+exploration_moves= 17
+fitness_avg= 646.8
+time_avg= 0.22533211708068848
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 100
+explotation_moves= 12
+exploration_moves= 12
+fitness_avg= 688.8
+time_avg= 0.1671374797821045
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 1000
+explotation_moves= 25
+exploration_moves= 25
+fitness_avg= 519.8
+time_avg= 3.376114273071289
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 1000
+explotation_moves= 25
+exploration_moves= 17
+fitness_avg= 527.0
+time_avg= 2.467779207229614
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 1000
+explotation_moves= 25
+exploration_moves= 12
+fitness_avg= 536.0
+time_avg= 1.915776777267456
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 1000
+explotation_moves= 17
+exploration_moves= 25
+fitness_avg= 514.2
+time_avg= 3.1841471195220947
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 1000
+explotation_moves= 17
+exploration_moves= 17
+fitness_avg= 522.8
+time_avg= 2.3047521114349365
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 1000
+explotation_moves= 17
+exploration_moves= 12
+fitness_avg= 526.0
+time_avg= 1.760213565826416
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 1000
+explotation_moves= 12
+exploration_moves= 25
+fitness_avg= 512.8
+time_avg= 3.0790521621704103
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 1000
+explotation_moves= 12
+exploration_moves= 17
+fitness_avg= 508.6
+time_avg= 2.2286329746246336
+=========================================
+exp_factor= 0.3
+population= 30
+generation= 1000
+explotation_moves= 12
+exploration_moves= 12
+fitness_avg= 521.4
+time_avg= 1.6762474536895753
+=========================================
