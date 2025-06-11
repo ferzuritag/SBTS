@@ -49,4 +49,4 @@ points= [
 ( 3023, 1942)
 ]
 
-optimal = 27686
+optimal = 33522

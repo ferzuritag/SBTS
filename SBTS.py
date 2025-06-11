@@ -1,4 +1,5 @@
 import random
+import numpy as np
 
 def fitness(distance_matrix, route):
     cost = 0
@@ -12,32 +13,6 @@ def fitness(distance_matrix, route):
 
     return cost
 
-def generate_greedy_solution(dist_matrix):
-    n = len(dist_matrix)
-    visited = [False] * n
-    sequence = []
-    
-    current = 0  # start from point 0 (you can change this)
-    sequence.append(current)
-    visited[current] = True
-    
-    for _ in range(n - 1):
-        min_dist = float('inf')
-        next_point = None
-        
-        for i in range(n):
-            if not visited[i] and dist_matrix[current][i] < min_dist:
-                min_dist = dist_matrix[current][i]
-                next_point = i
-        
-        visited[next_point] = True
-        sequence.append(next_point)
-        current = next_point
-    
-
-
-    return sequence
-
 def generate_random_solutions(n, m):
 
     solutions = []
@@ -47,16 +22,6 @@ def generate_random_solutions(n, m):
         sol = base[:]
         random.shuffle(sol)
         solutions.append(sol)
-
-    return solutions
-
-def generate_random_greedy_solutions(distance_matrix, n, shuffle_moves):
-    original_greedy = generate_greedy_solution(distance_matrix)
-    solutions = [original_greedy]
-
-    for _ in range(n):
-        samp = shuffle(original_greedy, shuffle_moves)
-        solutions.append(samp)
 
     return solutions
 
@@ -78,7 +43,7 @@ def shuffle(individual, moves):
 
     return individual
 
-def search_on_neighboor(distance_matrix, individual, moves, fitness):
+def search_on_neighboor_insertion(distance_matrix, individual, moves, fitness):
     tabu_list = []
     moves_counter = 0
     current = individual.copy()
@@ -87,18 +52,20 @@ def search_on_neighboor(distance_matrix, individual, moves, fitness):
 
     while moves_counter < moves:
         i, j = random.sample(range(len(current)), 2)
-        move = (min(i, j), max(i, j))
+        move = (i, j)
 
         if move not in tabu_list:
-            current[i], current[j] = current[j], current[i]
+            node = current.pop(i)
+            current.insert(j, node)
+
             current_fitness = fitness(distance_matrix, current)
 
             if current_fitness < best_fitness:
                 best_individual = current.copy()
                 best_fitness = current_fitness
             else:
-                # Si no mejora, deshacer el movimiento
-                current[i], current[j] = current[j], current[i]
+                current.pop(j)
+                current.insert(i, node)
 
             tabu_list.append(move)
             moves_counter += 1
@@ -107,7 +74,7 @@ def search_on_neighboor(distance_matrix, individual, moves, fitness):
 
 def SBTS(distance_matrix, population_size, generations, exploration_factor, explotation_moves, exploration_moves):
     population = generate_random_solutions(population_size, len(distance_matrix) - 1)
-
+    
     best_fitnesss = float('inf')
     best_individual_found = None
 
@@ -121,7 +88,6 @@ def SBTS(distance_matrix, population_size, generations, exploration_factor, expl
             best_fitnesss = individual_fitness
             best_individual_found = individual
 
-
     for gen in range(generations):
 
         for idx, individual in enumerate(population):
@@ -130,7 +96,7 @@ def SBTS(distance_matrix, population_size, generations, exploration_factor, expl
 
             if (random.random() > exploration_factor):
                 # explotation behavior
-                best_individual_found, best_fitness_found = search_on_neighboor(distance_matrix, individual, moves=explotation_moves, fitness=fitness)
+                best_individual_found, best_fitness_found = search_on_neighboor_insertion(distance_matrix, individual, moves=explotation_moves, fitness=fitness)
 
                 if best_fitness_found < fitness_before_changes:
                     population[idx] = best_individual_found
@@ -150,7 +116,7 @@ def SBTS(distance_matrix, population_size, generations, exploration_factor, expl
 
                 if new_individual_fitness < fitness_before_changes:
                     population[idx] = new_individual
-                
+         
         gen_history.append(best_fitnesss)
 
     return best_fitnesss, best_individual_found, gen_history

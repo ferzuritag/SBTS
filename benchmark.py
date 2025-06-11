@@ -7,7 +7,8 @@ def benchmark(distance_matrix,samples, exploration_factor,generations ,populatio
     result_acum = []
     best_fit = float('inf')
     best_fit_history = None
-    for _ in range(samples):
+
+    for n_test in range(samples):
         start = time.time() 
         fit, result, gen_history = SBTS(distance_matrix, exploration_factor=exploration_factor, generations=generations, population_size=population_size, explotation_moves = explotation_moves, exploration_moves = exploration_moves)
         print(fit)
@@ -19,6 +20,8 @@ def benchmark(distance_matrix,samples, exploration_factor,generations ,populatio
         result_acum.append(result)
         time_acum.append(end - start)
         fit_acum.append(fit)
+        print(f"Test {n_test + 1} finished")
+
 
     fitness_minimum = min(fit_acum)
     fitness_maximum = max(fit_acum)
